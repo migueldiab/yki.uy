@@ -25,15 +25,38 @@ class About extends React.Component {
 
         <br/>
 
-        <div className="row">
-          <div className="col-sm-4 col-md-3 col-lg-2">
+        <div className="row" style={{
+          'text-align': 'center'
+        }}>
+          <div className="col-sm-12 col-md-12 col-lg-12">
+            <img src="/images/logo_yki_bw.jpg" alt=""/>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-4">
+            <img src="/images/java.png" alt=""/>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-4">
+            <img src="/images/react.png" alt=""/>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-4">
+            <img src="/images/ruby.png" alt=""/>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-4">
             <img src="/images/html5_logo.png" alt=""/>
           </div>
-          <div className="col-sm-4 col-md-3 col-lg-2">
-            a
+          <div className="col-sm-12 col-md-6 col-lg-4">
+            <img src="/images/sinatrarb.png" alt=""/>
           </div>
-          <div className="col-sm-4 col-md-3 col-lg-2">
-            <img src="/images/css3_logo.png" alt=""/>
+          <div className="col-sm-12 col-md-6 col-lg-4">
+            <img src="/images/groovy.png" alt=""/>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-4">
+            <img src="/images/rspec.png" alt=""/>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-4">
+            <img src="/images/github.png" alt=""/>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-4">
+            <img src="/images/css3.png" alt=""/>
           </div>
         </div>
       </div>
