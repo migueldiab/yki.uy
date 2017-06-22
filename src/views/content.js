@@ -1,22 +1,24 @@
-import React from 'react';
+import React    from 'react';
 import ReactDOM from 'react-dom';
+import About    from './contents/about';
+import Skills   from './contents/skills';
+import Contact  from './contents/contact';
 
-export default function content() {
-  const root = document.getElementById("root");
-  const expression = (new Date()).toLocaleTimeString()
-  const content = (
-    <div className="row">
-      <div className="col-sm-12 col-md-6 col-lg-4">
-        <h2>Column 1</h2>
-        {expression}
+class Content extends React.Component {
+
+  render() {
+    return (
+      <div className="row">
+        <div className="col-sm-12 col-md-6 col-lg-6 col-lg-offset-1">
+          <About />
+        </div>
+        <div className="col-sm-12 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-1">
+          <Skills />
+          <Contact />
+        </div>
       </div>
-      <div className="col-sm-12 col-md-6 col-lg-4">
-          <h2>Column 2</h2>
-      </div>
-      <div className="col-sm-12 col-lg-4">
-          <h2>Column 3</h2>
-      </div>
-    </div>
-  )
-  ReactDOM.render(content, root);
+    )
+  }
 }
+
+export default Content;

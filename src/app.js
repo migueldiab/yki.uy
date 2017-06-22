@@ -1,12 +1,28 @@
-import header  from './views/header';
-import content from './views/content';
-import footer  from './views/footer';
+import React    from 'react';
+import ReactDOM from 'react-dom';
+
+import Header  from './views/header';
+import Content from './views/content';
+import Footer  from './views/footer';
+import Granim  from './lib/granim';
 
 console.info("Init App");
 
-header();
-setInterval(content, 1000);
-footer();
+const root    = document.getElementById("root");
+const body = (
+  <div className="content">
+    <div className="content">
+      <Header  />
+      <br />
+      <Content />
+      <br />
+
+    </div>
+    <Footer  />
+  </div>
+);
+
+ReactDOM.render(body, root)
 
 if (module.hot) {
   module.hot.accept();
